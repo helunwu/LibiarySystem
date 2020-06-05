@@ -1,0 +1,7 @@
+<view class="classlist">
+  {{class}}
+  <block wx:for="{{subjectList}}" wx:key="id">
+    <x-subjectList Sitem="{{item}}"/>
+  </block>
+  
+</view>

@@ -1,0 +1,5 @@
+<view class="classification" >
+  <view class="posite" >
+    <text>{{Citem.text}}</text>
+  </view>
+</view>

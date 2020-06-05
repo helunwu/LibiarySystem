@@ -1,0 +1,11 @@
+<view class="cup">
+  <view class="content">
+    <image src="{{Sitem.img}}" mode="asceptFill"/>
+    <view class="instruct">
+      <text>书名：{{Sitem.shuming}}</text>
+      <text>作者：{{Sitem.zuozhe}}</text>
+    </view>
+    <view class="button"> <button type="primary" size="mini">预阅</button></view>
+     
+  </view>
+</view>

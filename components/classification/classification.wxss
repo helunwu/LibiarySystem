@@ -1,0 +1,15 @@
+.classification{
+  position: relative;
+  height: 200rpx;
+  width: 340rpx;
+  color: white;
+  border-radius: 10rpx;
+  text-align: center;
+  background-color: #d4237a;
+  margin: 10rpx 0rpx 5rpx 0rpx;
+}
+.posite{
+  position: absolute;
+  
+  margin: 90rpx 0rpx 0rpx 110rpx;
+}

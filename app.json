@@ -1,0 +1,30 @@
+{
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./image/start.png",
+      "selectedIconPath": "./image/startsel.png"
+    },
+    {
+      "pagePath": "pages/center/center",
+      "text": "个人中心",
+      "iconPath": "./image/center.png",
+      "selectedIconPath": "./image/centersel.png"
+    }
+  ]},
+  "pages":[
+    "pages/index/index",
+    "pages/center/center",
+     "pages/goods/goods",
+    "pages/classes/classes"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d4237a",
+    "navigationBarTitleText": "图书管理系统",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

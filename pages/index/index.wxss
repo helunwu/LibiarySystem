@@ -1,0 +1,45 @@
+.select{
+  padding: 10rpx 25rpx;
+  margin: 15rpx auto;
+  width: 600rpx;
+  height: 60rpx;
+  border: 2rpx solid #8a8a8a;
+  border-radius: 50rpx;
+  display: flex;
+}
+.swi{
+  margin: 20rpx;
+  border-radius: 50rpx;
+}
+.swi_item{
+  border-radius: 20rpx;
+}
+.select icon{
+  margin-left: 120rpx;
+}
+.kinds{
+ display: flex;
+ flex-direction: column;
+}
+.fenge{
+  height: 20rpx;
+  background-color:rgb(230, 230, 230);
+}
+.topic{
+  height: 80rpx;
+  font-size: 30rpx;
+  margin: 0px 25rpx;
+  position: relative;
+  border-bottom: 1rpx solid gray;
+}
+.topic_p{
+  position: absolute;
+  bottom: 10rpx;
+}
+.kindlist{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin: 0px 20rpx;
+}

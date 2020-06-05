@@ -1,0 +1,14 @@
+{
+  "usingComponents":
+   {
+    "x-subjectList":"/components/subjectList/subjectList"
+  },
+
+    "navigationBarBackgroundColor": "#d4237a",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "图书类别",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+
+}
