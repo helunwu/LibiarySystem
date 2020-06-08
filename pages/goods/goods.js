@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-      img:[]
+      img:[],
+      content:[],
+      author:[]
   },
 
   /**
@@ -15,9 +17,11 @@ Page({
    
   
     console.log(options)
-   
     this.setData({
-      img : options.img
+      img : options.img,
+      author:options.author,
+      content:options.content,
+      name: options.name
     })
   },
 

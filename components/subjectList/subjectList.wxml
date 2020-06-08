@@ -5,7 +5,9 @@
       <text>书名：{{Sitem.shuming}}</text>
       <text>作者：{{Sitem.zuozhe}}</text>
     </view>
-    <view class="button"> <button type="primary" size="mini">预阅</button></view>
+    <view class="button">
+     <button type="primary" size="mini"  catchtap="introduce" form-type="submit" data-img="{{Sitem.img}}" data-author="{{Sitem.zuozhe}}" data-name="{{Sitem.shuming}}">预阅</button>
+    </view>
      
   </view>
 </view>

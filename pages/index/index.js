@@ -2,21 +2,7 @@
 
 Page({
   data:{
-    image:[
-       {
-         id:"1",
-         src:"https://s1.ax1x.com/2020/06/03/tdvZRI.jpg"
-        
-      },
-      {
-        id:"2",
-        src:"https://s1.ax1x.com/2020/06/03/tdxpfs.jpg"
-      },
-      {
-        id:"3",
-        src:"https://s1.ax1x.com/2020/06/03/tdxQ6x.jpg"
-      }
-    ],
+    Lbtimage:[],
     booklist:[
         {
           id:"1",
@@ -49,13 +35,43 @@ Page({
         }
     ]
   },
+  
+  onLoad:function(){
+    
+    wx.cloud.init({
+      env : 'saobang-v83x8'
+    })
+    const db = wx.cloud.database()
+    //查询并显示某一个数据
+    // db.collection('LbtList').where({  
+    //   _id : 'lbt_01'
+    // }).get({
+    //   success:res=>{
+    //    console.log(res.data)
+    //   }
+    // })
+    db.collection('LbtList').get({
+      success:(res)=>{
+        let image = Object(res.data)
+        console.log(image)
+        this.setData({
+          Lbtimage: res.data
+        })
+      }
+    })
+  },
   serch:function(){
 
   },
   lunbo:function(e){
     let img = e.currentTarget.dataset.img
+    let content = e.currentTarget.dataset.content
+    let author = e.currentTarget.dataset.author
+    let name = e.currentTarget.dataset.name
+    console.log(e.currentTarget)
     wx.navigateTo({
-      url: '../goods/goods?img=' + img
+
+      url: '../goods/goods?img=' + img + '&author=' + author + '&name=' + name + '&content=' + content
     })
     console.log(img)
   },

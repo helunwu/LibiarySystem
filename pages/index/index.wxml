@@ -1,6 +1,7 @@
 <view>
   <swiper autoplay circular indicator-dots class="swi">
-    <swiper-item  wx:for="{{image}}" wx:key="id" class="swi_item"><image src="{{item.src}}" mode="widthFix" data-id="{{item.id}}" data-img="{{item.src}}"  bindtap="lunbo"/></swiper-item>
+    <swiper-item  wx:for="{{Lbtimage}}" wx:key="id" class="swi_item"><image src="{{item.img}}" mode="widthFix" data-img="{{item.img}}" data-content="{{item.content}}" data-author="{{item.author}}" data-name="{{item.name}}"  bindtap="lunbo"/>
+    </swiper-item>
   </swiper>
 </view>
 <view class="select">
