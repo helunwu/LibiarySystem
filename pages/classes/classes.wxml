@@ -1,8 +1,9 @@
 <view>
   
   <view class="classlist">
-  
-    <input placeholder="请输入书名"/>
+    <input placeholder="请输入书名" value="{{inputValue}}" type="text" bindinput="bindKeyInput"/>
+    <icon type="search" bindtap="search" size="70rpx" color="white"/>
+    <!-- <button size="mini">取消</button> -->
   </view>
   <view>
     <block wx:for="{{subjectList}}" wx:key="id">

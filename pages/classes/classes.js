@@ -5,11 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inputValue:[],
     id:[],
     class:[],
     list:[],
     subjectList:[]
   },
+ 
 
   /**
    * 生命周期函数--监听页面加载
@@ -44,7 +46,7 @@ Page({
         env : 'saobang-v83x8'
       })
       const db = wx.cloud.database()
-      db.collection('bklist').get({
+      db.collection('bklist').limit(5).get({
         success:(res)=>{
           let kh = Object(res.data)
           console.log(kh)
@@ -55,7 +57,32 @@ Page({
       })
     }
   },
-  
+  bindKeyInput:function(e){
+    this.setData({
+      inputValue:e.detail.value
+    })
+  },
+  search:function(e){
+     let value = this.data.inputValue
+     console.log(value)
+
+      const  db = wx.cloud.database()
+
+      db.collection('bklist').where({
+          name:db.RegExp({
+            regexp:value,
+            options:'i'
+          })
+      }).get({
+        success:res=>{
+          console.log(res)
+          this.setData({
+            subjectList: res.data
+          })
+        }
+      })
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

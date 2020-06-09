@@ -8,7 +8,6 @@
   <input type="text" placeholder="输入书名、作者搜索"></input>
   <icon type="search" color="gray" bindtap="serch"/>
 </view>
-<view class="fenge"></view>
 <view class="kinds">
   <view class="topic"> 
     <text class="topic_p">图书分类</text>
@@ -18,6 +17,4 @@
       <classification Citem="{{item}}"  bindtap="handleTap" data-id="{{item.id}}" data-class="{{item.text}}"/>
     </block>
   </view> 
-  <view class="fenge"></view>
-
 </view>
