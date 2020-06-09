@@ -6,6 +6,7 @@ Page({
    */
   data: {
       img:[],
+      name:[],
       content:[],
       author:[]
   },

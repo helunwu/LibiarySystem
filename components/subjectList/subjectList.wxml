@@ -1,13 +1,9 @@
-<view class="cup">
+<view class="cup"  catchtap="introduce" data-img="{{Sitem.img}}" data-author="{{Sitem.author}}" data-name="{{Sitem.name}}" data-content="{{Sitem.content}}">
   <view class="content">
     <image src="{{Sitem.img}}" mode="asceptFill"/>
     <view class="instruct">
-      <text>书名：{{Sitem.shuming}}</text>
-      <text>作者：{{Sitem.zuozhe}}</text>
+      <text>书名：{{Sitem.name}}</text>
+      <text>作者：{{Sitem.author}}</text>
     </view>
-    <view class="button">
-     <button type="primary" size="mini"  catchtap="introduce" form-type="submit" data-img="{{Sitem.img}}" data-author="{{Sitem.zuozhe}}" data-name="{{Sitem.shuming}}">预阅</button>
-    </view>
-     
   </view>
 </view>

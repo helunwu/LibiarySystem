@@ -1,11 +1,24 @@
 /* pages/goods/goods.wxss */
+.photo image{
+
+}
 .introduce{
+  
   font-size: 34rpx;
   height: 400rpx;
   background-color: aqua;
   display: flex;
   flex-direction: column;
   
+}
+.content{
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 34rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:5;
 }
 .bottom{
  

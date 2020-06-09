@@ -1,9 +1,18 @@
 .classlist{
+  position: relative;
   text-align: center;
-  height: 50rpx;
+  height: 100rpx;
   color: white;
   font-size: 14px;
-  background-color: #1afa29;
-  border-radius: 50rpx;
-  
+  background-color: rgb(230, 230, 230);
+}
+.classlist input{
+  position: absolute;
+  width: 600rpx;
+  height: 70rpx;
+  right: 80rpx;
+  top: 15rpx;
+  background-color: white;
+  border:1rpx solid rgb(230, 230, 230);
+  border-radius: 10rpx;
 }

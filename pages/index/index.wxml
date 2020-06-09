@@ -10,15 +10,14 @@
 </view>
 <view class="fenge"></view>
 <view class="kinds">
-<view class="topic"> 
-  <text class="topic_p">图书分类</text>
-</view>
-<view class="kindlist">
-  <block wx:for="{{booklist}}" wx:key="id">
-    <classification Citem="{{item}}"  bindtap="handleTap" data-id="{{item.id}}" data-class="{{item.text}}"/>
-  </block>
-
-</view> 
-<view class="fenge"></view>
+  <view class="topic"> 
+    <text class="topic_p">图书分类</text>
+  </view>
+  <view class="kindlist">
+    <block wx:for="{{booklist}}" wx:key="id">
+      <classification Citem="{{item}}"  bindtap="handleTap" data-id="{{item.id}}" data-class="{{item.text}}"/>
+    </block>
+  </view> 
+  <view class="fenge"></view>
 
 </view>

@@ -26,11 +26,12 @@ Component({
   
     introduce:function(e){
       console.log(e)
-      let img = e.target.dataset.img
-      let author = e.target.dataset.author
-      let name = e.target.dataset.name
+      let img = e.currentTarget.dataset.img
+      let author = e.currentTarget.dataset.author
+      let name = e.currentTarget.dataset.name
+      let content = e.currentTarget.dataset.content
       wx.navigateTo({
-        url: '../goods/goods?img=' + img + '&author=' + author + '&name=' + name
+        url: '../goods/goods?img=' + img + '&author=' + author + '&name=' + name + '&content=' + content
       })
     }
   }

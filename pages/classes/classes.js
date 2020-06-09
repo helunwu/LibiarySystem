@@ -40,18 +40,16 @@ Page({
       })
     }
     if(key=="2"){
-      wx.request({
-        url: '', //仅为示例，并非真实的接口地址
-        data: {
-          
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success: (res)=> {
-          console.log(res.data)
+      wx.cloud.init({
+        env : 'saobang-v83x8'
+      })
+      const db = wx.cloud.database()
+      db.collection('bklist').get({
+        success:(res)=>{
+          let kh = Object(res.data)
+          console.log(kh)
           this.setData({
-            subjectList: res.data
+            subjectList :kh
           })
         }
       })

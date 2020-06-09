@@ -1,6 +1,12 @@
-<view class="classlist">
-  {{class}}
-  <block wx:for="{{subjectList}}" wx:key="id">
-    <x-subjectList Sitem="{{item}}"/>
-  </block>
+<view>
+  
+  <view class="classlist">
+  
+    <input placeholder="请输入书名"/>
+  </view>
+  <view>
+    <block wx:for="{{subjectList}}" wx:key="id">
+     <x-subjectList Sitem="{{item}}"/>
+    </block>
+  </view>
 </view>
