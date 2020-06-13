@@ -2,6 +2,9 @@
 
 Page({
   data:{
+    
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    Login: true,
     Lbtimage:[],
     booklist:[
         {
@@ -35,9 +38,30 @@ Page({
         }
     ]
   },
-  
-  onLoad:function(){
+  globalData:{
+    openid:"",
+    userInfo: null,
+    lastLoginData: "" //最后登录时间
+},
+  getUserInfo:function(e){
+    console.log(e.detail.userInfo)
     
+  },
+  onLoad:function(){
+
+    wx.getSetting({
+      success (res){
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function(res) {
+              console.log(res.userInfo)
+            }
+          })
+        }
+      }
+    })
+
     wx.cloud.init({
       env : 'saobang-v83x8'
     })

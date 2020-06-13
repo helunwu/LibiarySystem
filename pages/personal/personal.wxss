@@ -1,0 +1,27 @@
+.big{
+  position: relative;
+   height: 80rpx;
+  border-bottom: 5px solid rgb(230, 230, 230);
+}
+.big text{
+  display: flex;
+  position: absolute;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+.name{
+  position: absolute;
+  right: 60rpx;
+}
+.big image{
+  color: black;
+  right: 0;
+  top: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+}
+.But{
+  
+  margin: 200rpx auto;
+}

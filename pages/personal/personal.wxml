@@ -1,0 +1,40 @@
+
+<view class="big">
+   <text>我的头像</text>
+   <text class="name">hah</text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="big">
+   <text>我的昵称</text>
+   <text class="name"><open-data type="userNickName"></open-data></text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="big">
+   <text>联系方式</text>
+   <text class="name">110</text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="big">
+   <text>姓名</text>
+   <text class="name">张三</text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="big">
+   <text>学号</text>
+   <text class="name">20180000</text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="big">
+   <text>班级</text>
+   <text class="name">18级计科三班</text>
+   <image src="../../image/direction.png"/>
+</view>
+
+<view class="But">
+   <button type="primary" bindtap="To_revise">修改个人信息</button>
+</view>

@@ -64,8 +64,15 @@ Page({
   },
   search:function(e){
      let value = this.data.inputValue
-     console.log(value)
 
+
+     console.log(value);
+
+     if(value==null){
+       this.setData({
+         subjectList: "请输入"
+       })
+     }
       const  db = wx.cloud.database()
 
       db.collection('bklist').where({
@@ -78,6 +85,13 @@ Page({
           console.log(res)
           this.setData({
             subjectList: res.data
+          })
+        },
+        fail:error=>{
+          
+          console.log("对不起，暂无这本书")
+          this.setData({
+            
           })
         }
       })
@@ -115,14 +129,26 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    wx.startPullDownRefresh({
+      complete: (res) => {
+        const  db = wx.cloud.database()
+        db.collection('bklist').get({
+          
+          success:res=>{
+            console.log(res)
+            this.setData({ 
+            })
+          }
+        })
+      },
+    })
   },
 
   /**
