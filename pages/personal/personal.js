@@ -1,4 +1,5 @@
 // pages/personal/personal.js
+import {checkLogin} from '../../util/util.js'
 Page({
 
   /**
@@ -12,9 +13,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    checkLogin(
+      function(){
+        console.log("hah")
+        
+      }
+    )
+      
+    //   function(){
+    //   console.log("hello world");
+    //   console.log(user)
+    //  }
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

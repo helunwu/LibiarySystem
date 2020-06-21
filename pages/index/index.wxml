@@ -1,5 +1,5 @@
 <template name="login">
-  <view class="cu-modal {{showLogin?'show':''}}">
+  <view class="cu-modal ">
     <view class="cu-dialog">
       <view class="flex padding justify-center">
         <view class="cu-avatar xl margin-top-xl round" style="background-image:url(../../../../image/center.png);"></view>
@@ -17,7 +17,7 @@
   </view>
 </template>
 
-<!-- <template is="login" data="{{showLogin: showLogin}}"></template> -->
+<template is="login"  wx:if="{{showLogin}}">></template>
 
 
 <view  wx:if="{{Login}}">

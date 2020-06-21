@@ -4,7 +4,8 @@ Page({
   data:{
     
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    Login: true,
+    Login: false,
+    showLogin:true,
     Lbtimage:[],
     booklist:[
         {
@@ -44,8 +45,12 @@ Page({
     lastLoginData: "" //最后登录时间
 },
   getUserInfo:function(e){
-    console.log(e.detail.userInfo)
     
+    console.log(e.detail.userInfo)
+    this.setData({
+      Login:true,
+      showLogin:false
+    })
   },
   onLoad:function(){
 
@@ -55,7 +60,7 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success: function(res) {
-              console.log(res.userInfo)
+             
             }
           })
         }
@@ -108,5 +113,6 @@ Page({
       url: '../classes/classes?class=' + classtext + '&id=' + classid
     })
     console.log(e.currentTarget)
-  }
+  },
+
 })
