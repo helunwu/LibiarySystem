@@ -1,0 +1,24 @@
+<block wx:for="{{centerMidInfors}}">
+<view class="centerMid">
+      <view class="centerMid-Title">
+      <text>{{item.childTitle}}</text>
+      <view class="centerMid-Title-Expand"><image src="{{item.borrowImg}}" ></image></view>
+      </view>
+        <view class="centerMid-details">
+          <view class="cover-left">
+            <image src="{{item.bookImg01}}" mode="scaleToFill"/>
+          </view>
+          <view class="desc-left">
+            <text class="bookTitle-left">{{item.bookName01}}</text>
+            <text class="bookauther-left">{{item.bookAuther01}}</text>
+          </view>
+          <view class="cover-right">
+            <image src="{{item.bookImg02}}" mode="scaleToFill"/>
+          </view>
+          <view class="desc-right">
+            <text class="bookTitle-right">{{item.bookName02}}</text>
+            <text class="bookauther-right">{{item.bookAuther02}}</text>
+          </view>
+        </view>
+</view>
+</block>

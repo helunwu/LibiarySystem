@@ -1,0 +1,32 @@
+.centerBottom{
+  background-color: #F0F0F0;
+  height: 240rpx;
+}
+.centerBottom .centerBottomTitle{
+  height: 50rpx;
+  font-size: 35rpx;
+  padding: 0rpx 20rpx;
+  padding-top: 15rpx;
+  display: block;
+  border-bottom: 6rpx solid white;
+}
+.centerBottom .centerBottomStyle{
+  display: flex;
+  flex-direction: rew;
+  justify-content: space-evenly;
+}
+.centerBottomStyle view{
+  flex: 1;
+}
+.centerBottom .centerBottomStyle image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 15rpx;
+  margin-left: 88rpx;
+}
+.centerBottom .centerBottomStyle text{
+  display: block;
+  font-size: 30rpx;
+  text-align: center;
+  color: #d4237a;
+}

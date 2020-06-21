@@ -28,7 +28,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.1",
-	"appid": "wx6eff3c0251998810",
+	"appid": "wx881d597b35bc0f01",
 	"projectname": "candy",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -94,6 +94,12 @@
 					"name": "个人信息",
 					"pathName": "pages/personal/personal",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图书分类",
+					"pathName": "pages/libraryDivide/libraryDivide",
 					"scene": null
 				}
 			]

@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "centerTop": "/components/centerTop/centerTop",
+    "centerMid": "/components/centerMid/centerMid",
+    "centerBottom": "/components/centerBottom/centerBottom"
+  }
 }

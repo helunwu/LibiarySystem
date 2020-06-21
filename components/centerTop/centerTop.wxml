@@ -1,0 +1,14 @@
+<view class="personalCenter">
+<view class="headPicture">
+<image src="/image/headPicture01.png" mode="aspectFill"/>
+</view>
+<view class="personalInformation">
+<view class="personalInformation-mid">
+<text class="registrar">爱拼才会赢</text>
+<view class="basicInformation">
+<text>关注 200 <text>粉丝 1000</text></text>
+</view>
+</view>
+<image src="/image/reset01.png" mode="aspectFill"/>
+</view>
+</view>

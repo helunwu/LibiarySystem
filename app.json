@@ -21,12 +21,12 @@
     "pages/goods/goods",
     "pages/classes/classes",
     "pages/personal/personal",
-    "pages/revise/revise"
+    "pages/revise/revise",
+    "pages/libraryDivide/libraryDivide"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d4237a",
-    "navigationBarTitleText": "图书管理系统",
     "navigationBarTextStyle": "white"
   },
   "style": "v2",

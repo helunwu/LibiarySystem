@@ -1,0 +1,19 @@
+<view class="centerBottom">
+  <view><text class="centerBottomTitle">个人中心</text></view>
+  <view class="centerBottomStyle">
+    <view>
+    <image src="/image/personalInformation.png" mode="scaleToFill"/>
+    <text>个人信息</text>
+    </view>
+
+    <view>
+    <image src="/image/reset02.png" mode="scaleToFill"/>
+    <text>设 置</text>
+    </view>
+
+    <view>
+    <image src="/image/helpCenter.png" mode="scaleToFill"/>
+    <text>帮助中心</text>
+    </view>
+  </view>
+</view>
